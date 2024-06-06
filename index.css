@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+.main-container{
+    display: flex;
+    background-color: #f5f8ff;
+}
+h1{
+    color: #6759ff;
+}
+.filter-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 100vh;
+    min-width: 20vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f8ff;
+    border-right: 3px solid #ff6600;
+}
+.filter-buttons>button{
+    flex-basis: 50px;
+    font-size: 1.1rem;
+    width: 15vw;
+    color: #6759ff;
+    background-color: #f5f8ff;
+    border-radius: 30px;
+    border: 1px solid #6759ff;
+    cursor: pointer;
+}
+.filter-buttons>button:hover{
+    background-color: #6759ff;
+    color: white;
+}
+.search-container{
+    background-color: #f5f8ff;
+    width: 78vw;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-bottom: 0.1vh;
+}
+.search-container>input{
+    height:6vh;
+    width: 40%;
+    background-color: transparent;
+    border-bottom: 2px solid #110f29;
+}
+.search-container>button{
+    height: 6vh;
+    width: 10%;
+    background-color: #6759ff;
+    border-radius: 5px;
+    color: white;
+    cursor:pointer;
+}
+.search-container>button:hover{
+    scale: 1.03;
+}
+.players{
+    margin-top: 20px;
+    height: 87vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+}
+.player-card{
+    height: 350px;
+    width: 275px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+.player-card:hover{
+    scale: 1.02;
+    background-color: #ebe9f9;
+}
+.img-container{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: 175px;
+}
+img{
+    height: 175px;
+    width: 175px;
+    border-radius: 10px;
+    transition: margin 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.info-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.player-name{
+    font-weight: 400;
+}
+.player-style{
+    font-weight: 300;
+}
+.player-age{
+    font-weight: 450;
+    font-size: 1.3rem;
+}
+.jersy-no{
+    position: relative;
+    bottom: 100px;
+    left: 130px;
+    color: #6759ff;
+    font-size: 3rem;
+    width: 20%;
+    z-index: -1;
+    transition: margin 0.5s ease-in-out;
+}
+.player-card:hover .jersy-no{
+    margin-left: 80px;
+    scale: 1.5;
+}
+.player-card:hover img{
+        margin-right: 75px;
+        scale: 1.02;
+}
+.hide{
+    visibility: collapse;
+    order: 1;
+}
